@@ -7,19 +7,8 @@ const Navigation = () => {
             <div class="flex space-x-7">
               {/* website logo */}
               <div>
-                {/* <a href="#Home" className="flex items-center py-4 ">
-                  <img
-                    className="hidden lg:block h-8 w-auto mr-2 "
-                    src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
-                    alt="ContactsList"
-                  ></img>
-                  <span className="font-semibold tetx-gray-500 text-lg ml-0">
-                    ContactList
-                  </span>
-                </a> */}
-
-                <a
-                  href="#home"
+                 <Link
+                  to="/"
                   className="flex flex-nowrap items-center py-4 px-2"
                 >
                   <img
@@ -30,46 +19,46 @@ const Navigation = () => {
                   <span class="font-bold text-gray-600 text-lg">
                     ContactList
                   </span>
-                </a>
+                </Link>
               </div>
 
               {/* Primary navbar items */}
               <div className="hidden md:flex items-center space-x-1">
-                <a
-                  href="#about"
+                <Link
+                  to="/about"
                   className="py-4 px-2 text-gray-500 focus:text-indigo-500 border-b-2 border-white focus:border-indigo-500 font-semibold hover:text-indigo-500 hover:border-indigo-500 transition duration-300"
                 >
                   About
-                </a>
-                <a
-                  href="#blog"
+                </Link>
+                <Link
+                  to="/Blog"
                   className="py-4 px-2 text-gray-500  focus:text-indigo-500 border-b-2 border-white focus:border-indigo-500 font-semibold hover:text-indigo-500 hover:border-indigo-500 transition duration-300"
                 >
                   Blog
-                </a>
-                <a
-                  href="#contact"
+                </Link>
+                <Link
+                  to="/Contact"
                   className="py-4 px-2 text-gray-500 focus:text-indigo-500  border-b-2 border-white focus:border-indigo-500 font-semibold hover:text-indigo-500 hover:border-indigo-500  transition duration-300"
                 >
                   Contact Us
-                </a>
+                </Link>
               </div>
             </div>
 
             {/* Secondary Navbar items */}
             <div className="hidden  md:flex items-center space-x-3">
-              <a
-                href="#login"
+              <Link
+                to="/Login"
                 className="py-2 px-2 font-medium text-gray-500 rounded hover:bg-indigo-500 hover:text-white transition duration-300 focus:bg-indigo-500 focus:text-white"
               >
                 Log in
-              </a>
-              <a
-                href="#signup"
+              </Link>
+              <Link
+                to="?Signup"
                 className="py-2 px-2 font-medium text-gray-500 rounded hover:bg-indigo-500  hover:text-white transition duration-300 focus:bg-indigo-500 focus:text-white"
               >
                 Sign Up
-              </a>
+              </Link>
             </div>
 
             {/* Mobile menu button  */}
