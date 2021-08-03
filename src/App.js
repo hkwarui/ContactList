@@ -3,6 +3,10 @@ import { useEffect, useState } from "react";
 
 import Navigation from "./Navigation";
 import ContactCards from "./ContactCard";
+import About from './About';
+import Shop from './Shop';
+import About from './Signin';
+import Shop from './Signup';
 
 const App = () => {
   const url = "https://randomuser.me/api";
