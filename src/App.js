@@ -1,10 +1,12 @@
 import useFetch from "react-fetch-hook";
 import { useEffect, useState } from "react";
+import { Route } from "react-router-dom";
 
 import Navigation from "./Navigation";
 import ContactCards from "./ContactCard";
 import About from "./About";
 import Shop from "./Shop";
+import Blog from "./Blog";
 import Signin from "./Signin";
 import Signup from "./Signup";
 
@@ -44,9 +46,10 @@ const App = () => {
 
           <Route path="/" component={ContactCards} exact />
           <Route path="/about" component={About} />
-          <Route path="/Shop" component={Shop} />
-          <Route path="/Signin" component={Signin} />
-          <Route path="/Signup" component={Signup} />
+          <Route path="/shop" component={Shop} />
+          <Route path="/blog" component={Blog} />
+          <Route path="/login" component={Signin} />
+          <Route path="/signup" component={Signup} />
 
           <section className="flex flex-wrap justify-between">
             <form>

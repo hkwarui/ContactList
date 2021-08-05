@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Navigation = () => {
   return (
     <>
@@ -31,16 +32,16 @@ const Navigation = () => {
                   About
                 </Link>
                 <Link
-                  to="/Blog"
+                  to="/blog"
                   className="py-4 px-2 text-gray-500  focus:text-indigo-500 border-b-2 border-white focus:border-indigo-500 font-semibold hover:text-indigo-500 hover:border-indigo-500 transition duration-300"
                 >
                   Blog
                 </Link>
                 <Link
-                  to="/Contact"
+                  to="/shop"
                   className="py-4 px-2 text-gray-500 focus:text-indigo-500  border-b-2 border-white focus:border-indigo-500 font-semibold hover:text-indigo-500 hover:border-indigo-500  transition duration-300"
                 >
-                  Contact Us
+                Shop
                 </Link>
               </div>
             </div>
@@ -48,13 +49,13 @@ const Navigation = () => {
             {/* Secondary Navbar items */}
             <div className="hidden  md:flex items-center space-x-3">
               <Link
-                to="/Login"
+                to="/login"
                 className="py-2 px-2 font-medium text-gray-500 rounded hover:bg-indigo-500 hover:text-white transition duration-300 focus:bg-indigo-500 focus:text-white"
               >
                 Log in
               </Link>
               <Link
-                to="?Signup"
+                to="/signup"
                 className="py-2 px-2 font-medium text-gray-500 rounded hover:bg-indigo-500  hover:text-white transition duration-300 focus:bg-indigo-500 focus:text-white"
               >
                 Sign Up
